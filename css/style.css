@@ -1,3 +1,9 @@
+@media (max-width: 800px) {
+    .box-1, .box-2, .box-3 {
+      flex: 100%;
+    }
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -26,13 +32,11 @@ body{
 #showcase h1{
     font-size: 50px;
     line-height: 1.2;
-    
 }
 
 #showcase p{
     font-size: 20px;
     color: whitesmoke;
-
 }
 
 #showcase .button{
@@ -52,33 +56,59 @@ body{
 }
 
 #section-a{
-    padding: 20px;
+    padding: 50px;
     background: lightsalmon;
     color: whitesmoke;
     text-align: center;
 }
 
 #section-b{
-    padding: 20px;
-    background: #f4f4f4;
+    padding: 50px;
+    background: #fff;
     color: lightsalmon;
     text-align: center;
+    
+}
+
+#section-b img{
+    image-rendering: auto;
 }
 
 #section-c{
     display: flex;
+    
 }
 
 #section-c div{
     padding: 20px;
+    
 }
 
 #section-c .box-1, #section-c .box-3{
     background: lightsalmon;
     color: whitesmoke;
+    max-width: 100%;
+    height: auto;
 
 }
 
 #section-c .box-2{
     border-top: lightsalmon 1px solid;
+    border-bottom: lightsalmon 1px solid;
+   max-width: 30vw;
+   height: auto;
+}
+
+#section-c img{
+    max-width: 30vw;
+    height: auto;
+    
+}
+
+#main-footer{
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
 }
